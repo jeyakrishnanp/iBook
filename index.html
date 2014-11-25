@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<link href="./css/login.css" rel="stylesheet"/>
+	</head>
+
+	<body>
+		<div id="header" class="header">
+			<div class="logo"></div>
+			<div class="container">
+				<form action="./views/feed.html" method="post" name="form" onsubmit="return validate()"> 
+					<div class="userContainer">
+						<input id="userTxt" class="userTxt" name="user" type="text" placeholder="Username" onfocus="changeBehavior(this);">
+						<label id="userMsg" class="userMsg"></label>	
+					</div>
+					<div class="pwdContainer">
+						<input id="pwdTxt" class="pwdTxt" name="password" type="password" placeholder="Password"  onfocus="changeBehavior(this);">
+						<label id="pwdMsg" class="pwdMsg"></label>
+					</div>
+					<button type="submit" class="btn">Login</button>
+				</form>
+			</div>
+		</div>
+		<div id="main" class="main">
+			<!--<img src="./images/ClearBooksIcon.png" class="mainImg"/>-->
+		</div>
+		<div id="footer" class="footer">
+			Talent Improving exercise, OFS
+		</div>
+		<script src="./js/login.js" ></script>
+	</body>
+</html>

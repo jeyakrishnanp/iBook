@@ -1,0 +1,72 @@
+html, body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+	font-family: "Verdana";
+	font-size: 11px;
+}
+
+.header {
+	height:100px;
+	width:100%;
+	background-image: url("../images/Book-Cover-Title-Header.png");
+}
+
+.header form {
+	height:100px;
+	width:100%;
+}
+
+.logo {
+	height: 100%;
+	width: 400px;
+	background-image: url("../images/clearbooks.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.container {
+	height: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+.main {
+	height: calc(100% - 130px);
+	background-image: url("../images/ClearBooksIcon.png");
+	background-repeat: repeat-y;
+	background-position-x: right;
+	background-position-y: top;
+	
+}
+
+.btn {
+    border-radius: 10px;  
+    display: inline-block;
+    padding-top: 3%;
+}
+
+.footer {
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	background-image: url("../images/Book-Cover-Title-Header.png");
+}
+
+.navicator {
+	display: inline-block;
+	height: 100%;
+	width: 150px;
+	border-right: solid 2px;
+}
+
+.bookshelf {
+	display: inline;
+	height: 100%;
+	width: calc(100% - 150px);
+}

@@ -1,0 +1,92 @@
+html, body {
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 100%;
+	font-family: "Verdana";
+	font-size: 11px;
+}
+
+.header {
+	height:100px;
+	width:100%;
+	background-image: url("../images/Book-Cover-Title-Header.png");
+}
+
+
+.logo {
+	height: 100%;
+	width: 400px;
+	background-image: url("../images/clearbooks.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.container {
+	height: 100%;
+	padding-top: 3%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+
+.main {
+	height: calc(100% - 130px);
+	background-image: url("../images/ClearBooksIcon.png");
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: bottom;
+}
+
+.userContainer {
+	display: inline-block;
+}
+
+.pwdContainer {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.userTxt {
+	display: block;
+    vertical-align: top; 
+}
+
+.userMsg {
+	display: block;
+	color: white;
+	height: 10px;
+}
+
+.pwdTxt {
+	display: block;
+    vertical-align: top;
+}
+
+.pwdMsg {
+	display: block;
+	color: white;
+	height: 20px;
+}
+
+.error {
+  border:1px solid red;
+}
+
+.btn {
+    border-radius: 10px;  
+    display: inline-block;
+    vertical-align: top; 
+}
+
+.mainImg {
+}
+
+.footer {
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	background-image: url("../images/Book-Cover-Title-Header.png");
+}
