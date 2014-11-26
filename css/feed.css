@@ -38,16 +38,46 @@ html, body {
 .main {
 	height: calc(100% - 130px);
 	background-image: url("../images/ClearBooksIcon.png");
-	background-repeat: repeat-y;
 	background-position-x: right;
-	background-position-y: top;
-	
+	background-position-y: bottom;
+	background-repeat: no-repeat;
 }
 
-.btn {
-    border-radius: 10px;  
-    display: inline-block;
-    padding-top: 3%;
+.navicator {
+	display: inline-block;
+	height: 100%;
+	width: 182px;
+	border-right: solid 2px;
+	float: left;
+}
+
+.bookshelf {
+	display: inline-block;
+	height: 100%;
+	width: calc(100% - 184px);
+	float: right;
+	overflow: auto;
+}
+
+.profile {
+	display: none;
+	height: calc(100% - 40px);
+	width: calc(100% - 224px);
+	float: right;
+	margin-top: 40px;
+	margin-left: 40px;
+	overflow: auto;
+}
+
+.postFeed {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.loadFeeds{
+	display: block;
+	margin-top:15px;
 }
 
 .footer {
@@ -58,15 +88,76 @@ html, body {
 	background-image: url("../images/Book-Cover-Title-Header.png");
 }
 
-.navicator {
-	display: inline-block;
-	height: 100%;
-	width: 150px;
-	border-right: solid 2px;
+.btn {
+    border-radius: 10px;  
+    padding-top: 3%;
+    display: inline-block;
+	background: url("../images/logout.png");
 }
 
-.bookshelf {
-	display: inline;
-	height: 100%;
-	width: calc(100% - 150px);
+.delete-btn {
+	height: 25px;
+	width: 25px;  
+	border: none;
+    display: inline-block;
+    background: none;
+	background-image: url("../images/delete.png");
+	background-repeat: no-repeat;
+	cursor: hand;
 }
+
+.feedIcon {
+	display: inline-block;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+
+.userFeed {
+	width: 60%;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.feedText {
+	display: inline-block;
+	margin-top: 3px;
+	width: 480px;
+	word-wrap: break-word;
+	vertical-align: top;
+}
+
+.feedDate {
+	display: inline-block;
+	margin-top: 3px;
+	vertical-align: top;
+}
+
+.feedDelete {
+	display: inline-block;
+	margin-top: 3px;
+}
+
+.userSpan {
+	display: block;
+	border-bottom: solid 1px;
+	width: 100%;
+}
+
+.profileImage {
+	display: inline-block;
+	height: 200px;
+	display: inline-block;
+	height: 200px;
+	width: 150px;
+	vertical-align: top;
+}
+
+.profileDetail {
+	display: inline-block;
+}
+
+.profileDetail div {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+

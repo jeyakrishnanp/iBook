@@ -14,13 +14,44 @@
 		</div>
 		<div id="main" class="main">
 			<div class="navicator">
-				<a href="feed.html" style="background: rgb(176, 211, 229)">Feed</a><br>
-				<a href="profile.html">Profile</a><br>
+				<a href="#" onclick="switchDiv(this)" name="feed">Feed</a><br>
+				<a href="#" onclick="switchDiv(this)" name="profile">Profile</a><br>
 			</div>
-			<div class="bookshelf">
-				<input id = "feedId" value = "" type = "text"/>
-				<button class="postbtn" onclick="createFeed('feedId')">Post</button>
+			<div id="bookshelf" class="bookshelf">
+				<div class="postFeed">
+					<input id = "feedId" value = "" type = "text" placeholder="Feed Text/URL"/>
+					<button class="postbtn" onclick="createFeed('feedId')">Post</button>
+				</div>
 				<div id="loadFeeds" class = "feedlist"></div>
+			</div>
+			<div id="profile" class="profile">
+				<div id="profileDetail" class="profileDetail">
+					<div>
+						<input type = "text" id="name" placeholder = "Name"/>
+					</div>
+					<div>
+						<input type = "text" id="age" placeholder = "Age"/>
+					</div>
+					<div>
+						<input type = "text" id="phone" placeholder = "Phone"/>
+					</div>
+					<div>
+						<input type = "text" id="email" placeholder = "Email"/>
+					</div>
+					<div>
+						<textarea rows="8" cols="22" placeholder = "Address" id="address"></textarea>
+					</div>
+					<div>
+						<input type = "text" id="imageName" placeholder = "Profile image" readonly="readonly"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="file" id="imageFile" name="imageFile" accept="image/*" onchange="showImage(this)"/>
+					</div>
+					<div>
+						<input type = "button" value = "Save" onclick = "saveProfile()"/>
+					</div>
+				</div>
+				<div id = "profileImage" class="profileImage">
+					<img id="previewField" src="../img/no-image.jpg" alt="Profile Picture" style="height: 150px;  width: 100px;"/>
+				</div>
 			</div>
 		</div>
 		<div id="footer" class="footer">

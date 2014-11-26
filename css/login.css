@@ -90,3 +90,14 @@ html, body {
 	margin-bottom: 5px;
 	background-image: url("../images/Book-Cover-Title-Header.png");
 }
+
+/*
+#feedDiv:nth-child(even) {
+	background: #BADBDD;
+	border-radius:8px;
+}
+
+#feedDiv:nth-child(odd) {
+	background: #FBFCE5;
+	border-radius:8px;
+}*/
